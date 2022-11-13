@@ -4,7 +4,7 @@
   "scripts": {
     "build": "run-p build:*",
     "build:app": "remix build",
-    "build:css": "tailwindcss -o ./build/styles/tailwind.css",
+    "build:css": "tailwindcss -o ./app/styles/tailwind.css",
     "dev": "run-p dev:*",
     "dev:app": "remix dev",
     "dev:css": "npm run build:css -- --watch",
