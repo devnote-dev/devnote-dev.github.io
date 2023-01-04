@@ -30,6 +30,11 @@ function getColourScheme(): string {
   return 'from-[#181646] to-[#100f2f]';
 }
 
+function getTextColour(): string {
+  let hour = parseInt(new Date().toTimeString().split(':')[0]);
+  return hour >= 19 || hour < 7 ? 'text-slate-200' : 'text-black';
+}
+
 export default function App() {
   const year = new Date().getFullYear();
 
@@ -40,7 +45,7 @@ export default function App() {
         <Links />
       </head>
       <body className={`h-screen bg-gradient-to-b ${getColourScheme()}`}>
-        <nav className="w-full px-6 py-2 flex flex-row items-center justify-start gap-x-6 bg-black text-white opacity-50 shadow-lg">
+        <nav className="w-full px-6 py-2 flex flex-row items-center justify-center gap-x-6 bg-black text-white opacity-50 shadow-lg">
           <Tooltip title="GitHub">
             <a href="https://github.com/devnote-dev">
               <BsGithub className="w-8 h-8" />
@@ -61,11 +66,11 @@ export default function App() {
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
-        <div className="flex justify-center">
-          <div className="invert text-white text-md">
-            &copy; {year} devnote-dev
+        <footer>
+          <div className="flex flex-col justify-end text-center p-12 bottom-0 text-sm">
+            <span className={getTextColour()}>&copy; {year} devnote-dev</span>
           </div>
-        </div>
+        </footer>
       </body>
     </html>
   );
