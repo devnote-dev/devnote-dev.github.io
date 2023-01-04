@@ -31,6 +31,8 @@ function getColourScheme(): string {
 }
 
 export default function App() {
+  const year = new Date().getFullYear();
+
   return (
     <html lang="en">
       <head>
@@ -59,6 +61,11 @@ export default function App() {
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
+        <div className="flex justify-center">
+          <div className="invert text-white text-md">
+            &copy; {year} devnote-dev
+          </div>
+        </div>
       </body>
     </html>
   );
