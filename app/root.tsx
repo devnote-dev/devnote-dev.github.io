@@ -7,9 +7,8 @@ import {
   Scripts,
   ScrollRestoration,
 } from '@remix-run/react';
-import { useEffect, useState } from 'react';
-import { BsGithub, BsMoonFill, BsSunFill } from 'react-icons/bs';
-import { IoMail } from 'react-icons/io5';
+import { BsGithub, BsTwitter } from 'react-icons/bs';
+import { SiGmail } from 'react-icons/si';
 import styles from './styles/tailwind.css';
 
 export function links() {
@@ -18,42 +17,36 @@ export function links() {
 
 export const meta: MetaFunction = () => ({
   charset: 'utf-8',
-  title: 'devnote.dev',
+  title: 'devnote-dev',
   viewport: 'width=device-width,initial-scale=1',
 });
 
+function getTimeColourScheme(): string {
+  let hour = parseInt(new Date().toTimeString().split(':')[0]);
+  if (hour > 7 && hour < 12) return 'from-[#cdcff9] to-[#ffb885]';
+  if (hour > 12 && hour < 16) return 'from-[#cdcff9] to-[#ffb885]';
+  if (hour > 16 && hour < 18) return 'from-[#494ea7] to-[#3b1c59]';
+  return 'from-[#181646] to-[#100f2f]';
+}
+
 export default function App() {
-  const [darkMode, setDarkMode] = useState(false);
-
-  useEffect(() => {
-    if (darkMode) {
-      document.body.classList.add('dark');
-    } else {
-      document.body.classList.remove('dark');
-    }
-  }, [darkMode]);
-
   return (
-    <html lang="en" className="h-full">
+    <html lang="en">
       <head>
         <Meta />
         <Links />
       </head>
-      <body className="h-full bg-gradient-to-t from-orange-600 to-white dark:to-black">
-        <nav className="h-12 w-full flex-row items-end justify-between px-4 mt-4">
-          <div className="flex flex-row gap-x-4 text-2xl text-slate-800 dark:bg-white">
-            <a href="mailto:devnote.dev75@gmail.com">
-              <IoMail />
-            </a>
-            <a href="https://github.com/devnote-dev" type="_blank">
-              <BsGithub />
-            </a>
-            {darkMode ? (
-              <BsSunFill onClick={() => setDarkMode(false)} />
-            ) : (
-              <BsMoonFill onClick={() => setDarkMode(true)} />
-            )}
-          </div>
+      <body className={`h-screen bg-gradient-to-b ${getTimeColourScheme()}`}>
+        <nav className="w-full px-6 py-2 flex flex-row items-center justify-start gap-x-6 bg-black text-white opacity-50">
+          <a href="https://github.com/devnote-dev">
+            <BsGithub className="w-8 h-8" />
+          </a>
+          <a href="mailto:dkwhittle4@gmail.com">
+            <SiGmail className="w-8 h-8" />
+          </a>
+          <a href="https://twitter.com/devw1_">
+            <BsTwitter className="w-8 h-8" />
+          </a>
         </nav>
         <Outlet />
         <ScrollRestoration />
