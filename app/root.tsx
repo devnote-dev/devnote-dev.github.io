@@ -40,7 +40,7 @@ export default function App() {
         <Links />
       </head>
       <body className={`h-screen bg-gradient-to-b ${getColourScheme()}`}>
-        <nav className="w-full px-6 py-2 flex flex-row items-center justify-start gap-x-6 bg-black text-white opacity-50">
+        <nav className="w-full px-6 py-2 flex flex-row items-center justify-start gap-x-6 bg-black text-white opacity-50 shadow-lg">
           <Tooltip title="GitHub">
             <a href="https://github.com/devnote-dev">
               <BsGithub className="w-8 h-8" />
