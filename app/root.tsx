@@ -22,11 +22,11 @@ export const meta: MetaFunction = () => ({
   viewport: 'width=device-width,initial-scale=1',
 });
 
-function getTimeColourScheme(): string {
+function getColourScheme(): string {
   let hour = parseInt(new Date().toTimeString().split(':')[0]);
-  if (hour > 7 && hour < 12) return 'from-[#cdcff9] to-[#ffb885]';
-  if (hour > 12 && hour < 16) return 'from-[#cdcff9] to-[#ffb885]';
-  if (hour > 16 && hour < 18) return 'from-[#494ea7] to-[#3b1c59]';
+  if (hour >= 7 && hour < 12) return 'from-[#cdcff9] to-[#ffb885]';
+  if (hour >= 12 && hour < 16) return 'from-[#85c8ff] to-[#494ea7]';
+  if (hour >= 16 && hour < 18) return 'from-[#494ea7] to-[#3b1c59]';
   return 'from-[#181646] to-[#100f2f]';
 }
 
@@ -37,7 +37,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className={`h-screen bg-gradient-to-b ${getTimeColourScheme()}`}>
+      <body className={`h-screen bg-gradient-to-b ${getColourScheme()}`}>
         <nav className="w-full px-6 py-2 flex flex-row items-center justify-start gap-x-6 bg-black text-white opacity-50">
           <Tooltip title="GitHub">
             <a href="https://github.com/devnote-dev">
