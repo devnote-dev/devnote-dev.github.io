@@ -1,3 +1,4 @@
+import { Tooltip } from '@mui/material';
 import type { MetaFunction } from '@remix-run/node';
 import {
   Links,
@@ -38,15 +39,21 @@ export default function App() {
       </head>
       <body className={`h-screen bg-gradient-to-b ${getTimeColourScheme()}`}>
         <nav className="w-full px-6 py-2 flex flex-row items-center justify-start gap-x-6 bg-black text-white opacity-50">
-          <a href="https://github.com/devnote-dev">
-            <BsGithub className="w-8 h-8" />
-          </a>
-          <a href="mailto:dkwhittle4@gmail.com">
-            <SiGmail className="w-8 h-8" />
-          </a>
-          <a href="https://twitter.com/devw1_">
-            <BsTwitter className="w-8 h-8" />
-          </a>
+          <Tooltip title="GitHub">
+            <a href="https://github.com/devnote-dev">
+              <BsGithub className="w-8 h-8" />
+            </a>
+          </Tooltip>
+          <Tooltip title="Gmail (business)">
+            <a href="mailto:dkwhittle4@gmail.com">
+              <SiGmail className="w-8 h-8" />
+            </a>
+          </Tooltip>
+          <Tooltip title="Twitter">
+            <a href="https://twitter.com/devw1_">
+              <BsTwitter className="w-8 h-8" />
+            </a>
+          </Tooltip>
         </nav>
         <Outlet />
         <ScrollRestoration />
