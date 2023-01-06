@@ -8,7 +8,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from '@remix-run/react';
-import { BsGithub, BsTwitter } from 'react-icons/bs';
+import { BsGithub, BsTwitter, BsPaypal } from 'react-icons/bs';
 import { SiGmail } from 'react-icons/si';
 import styles from './styles/tailwind.css';
 
@@ -48,17 +48,22 @@ export default function App() {
         <nav className="w-full px-6 py-2 flex flex-row items-center justify-center gap-x-6 bg-black text-white opacity-50 shadow-lg">
           <Tooltip title="GitHub">
             <a href="https://github.com/devnote-dev">
-              <BsGithub className="w-8 h-8" />
+              <BsGithub className="w-10 h-10" />
             </a>
           </Tooltip>
           <Tooltip title="Gmail (business)">
             <a href="mailto:dkwhittle4@gmail.com">
-              <SiGmail className="w-8 h-8" />
+              <SiGmail className="w-11 h-11" />
             </a>
           </Tooltip>
           <Tooltip title="Twitter">
             <a href="https://twitter.com/devw1_">
-              <BsTwitter className="w-8 h-8" />
+              <BsTwitter className="w-11 h-11" />
+            </a>
+          </Tooltip>
+          <Tooltip title="PayPal">
+            <a href="https://paypal.me/devnote">
+              <BsPaypal className="w-10 h-10" />
             </a>
           </Tooltip>
         </nav>
@@ -66,11 +71,6 @@ export default function App() {
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
-        <footer>
-          <div className="flex flex-col justify-end text-center p-12 bottom-0 text-sm">
-            <span className={getTextColour()}>&copy; {year} devnote-dev</span>
-          </div>
-        </footer>
       </body>
     </html>
   );
