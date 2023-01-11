@@ -30,14 +30,7 @@ function getColourScheme(): string {
   return 'from-[#181646] to-[#100f2f]';
 }
 
-function getTextColour(): string {
-  let hour = parseInt(new Date().toTimeString().split(':')[0]);
-  return hour >= 19 || hour < 7 ? 'text-slate-200' : 'text-black';
-}
-
 export default function App() {
-  const year = new Date().getFullYear();
-
   return (
     <html lang="en">
       <head>
