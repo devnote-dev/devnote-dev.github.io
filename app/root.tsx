@@ -36,6 +36,12 @@ export default function App() {
       <head>
         <Meta />
         <Links />
+        <script
+          async
+          defer
+          data-website-id="6638a74d-f8b3-4919-821c-fe96040be339"
+          src="https://your-information.is-on.top/umami.js"
+        />
       </head>
       <body className={`h-screen bg-gradient-to-b ${getColourScheme()}`}>
         <nav className="w-full px-6 py-2 flex flex-row items-center justify-center gap-x-6 bg-black text-white opacity-50 shadow-lg">
