@@ -38,7 +38,7 @@ export default function App() {
         <Outlet />
         <ScrollRestoration />
         <Scripts />
-        <footer className="h-14 w-full bg-black text-center">
+        <footer className="h-14 w-full bg-black dark:bg-slate-800 text-center">
           <div className="flex items-center justify-center">
             <a
               className="mt-4 text-gray-300 transition duration-150 ease-in-out hover:text-gray-300"

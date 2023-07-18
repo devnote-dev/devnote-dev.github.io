@@ -8,7 +8,7 @@ interface Props {
 
 export default function ({ home, experience, photos }: Props) {
   return (
-    <nav className="w-full h-14 flex flex-wrap items-center justify-center gap-x-6 bg-black text-white shadow-md font-[Roboto Medium,monospace]">
+    <nav className="w-full h-14 flex flex-wrap items-center justify-center gap-x-6 bg-black dark:bg-slate-800 text-white shadow-md font-[Roboto Medium,monospace]">
       {home ? (
         <div className="decoration-4 underline underline-offset-[17px]">
           Home
