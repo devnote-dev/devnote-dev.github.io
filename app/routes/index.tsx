@@ -1,6 +1,9 @@
+import NavBar from '~/components/NavBar';
+
 export default function () {
   return (
     <main>
+      <NavBar home />
       <div className="grid grid-cols-2 gap-x-10 m-12 font-[Roboto Medium,monospace]">
         <div>
           <h1 className="mb-2 font-bold text-2xl uppercase">About Me</h1>
