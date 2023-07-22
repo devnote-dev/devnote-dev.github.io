@@ -25,7 +25,7 @@ jobs:
           mv app/styles/tailwind.css build/
 
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-pages-artifact@v2
         with:
           name: github-pages
           path: build/
