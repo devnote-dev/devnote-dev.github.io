@@ -1,8 +1,9 @@
+import Footer from '~/components/Footer';
 import NavBar from '~/components/NavBar';
 
 export default function () {
   return (
-    <main>
+    <main className="grid min-h-[100svh] grid-rows-[auto_1fr_auto]">
       <NavBar home />
       <div className="grid grid-cols-2 gap-x-10 m-12 font-[Roboto Medium,monospace]">
         <div>
@@ -10,12 +11,12 @@ export default function () {
           <p>
             My name is Devaune Whittle, you may know me online as Devonte or
             "devnote" (parody name). I am a software developer from the UK
-            working on various open&ndash;source and commercial projects which you can
-            find on my GitHub. In my spare time, I'm a hobbyist photographer and
-            athletics enthusiast (although I'm not very good at it). I am also
-            experimenting with videography for personal projects and potential
-            collaborative projects, at some point these will be available on
-            this website too.
+            working on various open&ndash;source and commercial projects which
+            you can find on my GitHub. In my spare time, I'm a hobbyist
+            photographer and athletics enthusiast (although I'm not very good at
+            it). I am also experimenting with videography for personal projects
+            and potential collaborative projects, at some point these will be
+            available on this website too.
           </p>
         </div>
         <div>
@@ -53,6 +54,7 @@ export default function () {
           </ol>
         </div>
       </div>
+      <Footer />
     </main>
   );
 }

@@ -1,8 +1,9 @@
+import Footer from '~/components/Footer';
 import NavBar from '~/components/NavBar';
 
 export default function () {
   return (
-    <main>
+    <main className="grid min-h-[100svh] grid-rows-[auto_1fr_auto]">
       <NavBar />
       <div className="m-12 font-[Roboto Medium,monospace]">
         <h1 className="mb-4 font-bold text-4xl uppercase">
@@ -109,6 +110,7 @@ export default function () {
           </p>
         </div>
       </div>
+      <Footer />
     </main>
   );
 }

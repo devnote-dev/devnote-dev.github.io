@@ -1,9 +1,10 @@
 import { Link } from '@remix-run/react';
+import Footer from '~/components/Footer';
 import NavBar from '~/components/NavBar';
 
 export default function () {
   return (
-    <main>
+    <main className="grid min-h-[100svh] grid-rows-[auto_1fr_auto]">
       <NavBar experience />
       <div className="grid grid-rows-2 gap-y-10 m-12 font-[Roboto Medium,monospace]">
         <h1 className="mb-2 font-bold text-4xl uppercase">Experience</h1>
@@ -73,6 +74,7 @@ export default function () {
           </h3>
         </div>
       </div>
+      <Footer />
     </main>
   );
 }
