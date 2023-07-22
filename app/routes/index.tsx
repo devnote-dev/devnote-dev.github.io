@@ -6,7 +6,7 @@ export default function () {
       <NavBar home />
       <div className="grid grid-cols-2 gap-x-10 m-12 font-[Roboto Medium,monospace]">
         <div>
-          <h1 className="mb-2 font-bold text-4xl uppercase">About Me</h1>
+          <h1 className="mb-4 font-bold text-4xl uppercase">About Me</h1>
           <p>
             My name is Devaune Whittle, you may know me online as Devonte or
             "devnote" (parody name). I am a software developer from the UK
@@ -19,7 +19,7 @@ export default function () {
           </p>
         </div>
         <div>
-          <h1 className="mb-2 font-bold text-4xl uppercase">Contacts</h1>
+          <h1 className="mb-4 font-bold text-4xl uppercase">Contacts</h1>
           <ol>
             <li className="flex flex-wrap">
               <p className="font-bold uppercase">Gmail •&nbsp;</p>
