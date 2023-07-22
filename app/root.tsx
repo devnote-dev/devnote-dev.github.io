@@ -25,12 +25,6 @@ export default function App() {
       <head>
         <Meta />
         <Links />
-        <script
-          async
-          defer
-          data-website-id="6638a74d-f8b3-4919-821c-fe96040be339"
-          src="https://your-information.is-on.top/umami.js"
-        />
       </head>
       <body className="bg-white">
         <Outlet />
