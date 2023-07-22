@@ -1,3 +1,4 @@
+import { Link } from '@remix-run/react';
 import NavBar from '~/components/NavBar';
 
 export default function () {
@@ -6,12 +7,15 @@ export default function () {
       <NavBar experience />
       <div className="grid grid-rows-2 gap-y-10 m-12 font-[Roboto Medium,monospace]">
         <h1 className="mb-2 font-bold text-4xl uppercase">Experience</h1>
-        <div>
+        <Link
+          className="text-slate-400 hover:text-black"
+          to="/experience/python"
+        >
           <hr className="w-full h-6 rounded-xl bg-[#3572A5]" />
-          <h3 className="ml-4 font-bold text-slate-400 text-xl uppercase">
-            Python
+          <h3 className="ml-4 font-bold text-xl uppercase hover:transition hover:ease-in-out duration-300">
+            Python - 2016
           </h3>
-        </div>
+        </Link>
         <div>
           <div className="grid justify-items-end">
             <hr className="w-[95%] h-6 rounded-xl bg-[#F1E05A]" />
