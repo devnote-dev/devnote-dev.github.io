@@ -11,31 +11,29 @@ export default function () {
         <div className="grid gap-y-4">
           <p>
             Python was the first language I ever learned (excluding speaking
-            languages - then it's the third). I have vivid memories of playing
+            languages, then it's the third). I have vivid memories of playing
             around with Python 3.4 IDLE during primary school classes, not
             paying any attention to what I was actually being taught. Probably
             not the best idea in hindsight, but at least it paid off! Due to how
             long ago this was, I don't have an exact time period for the start
-            of my Python journey&#8212;and subsequently my programming
-            journey&#8212;so I will round it to my earliest comprehensible
-            memories from&nbsp;
-            <strong>2016</strong>.
+            of my Python journey&mdash;and subsequently my programming
+            journey&mdash;so I will round it to my earliest comprehensible
+            memories from <strong>2016</strong>.
           </p>
           <p>
             This is when I started to take the language a bit more seriously,
             learning actual programming concepts, code conventions and style
-            guides - I was (and still am) very opinionated about style guides. I
-            explored GUI development, which until then I had only really done
-            with the tkinter and turtle libraries. This prompted me to
-            make&nbsp;
-            <em>many</em> GUI applications doing various random and silly things
-            purely for the fun of it. I didn't realise at the time, but this
-            would be the foundation steps for my learning process that I have
-            used ever since for almost everything. I was also very interested in
-            the system-side of things such as file system operations, OS
-            services and command line interfaces. Unfortunately, I never really
-            got past making basic file system operations, that would come later
-            on in my journey.
+            guides &mdash; I was (and still am) very opinionated about style
+            guides. I explored GUI development, which until then I had only
+            really done with the tkinter and turtle libraries. This prompted me
+            to make <em>many</em> GUI applications doing various random and
+            silly things purely for the fun of it. I didn't realise at the time,
+            but this would be the foundation steps for my learning process that
+            I have used ever since for almost everything. I was also very
+            interested in the system side of things such as file system
+            operations, OS services and command line interfaces. Unfortunately,
+            I never really got past making basic file system operations, that
+            would come later on in my journey.
           </p>
           <p>
             Fast forward to <strong>2018</strong> and news of my technical
@@ -58,11 +56,11 @@ export default function () {
             shortly condemned to 2 and a half years of disassociation. During
             the time I had been frequenting various Discord servers and the
             concept of Discord bots captivated me. I had never done anything
-            with HTTP interactions up to this point, let alone hosting any kind
-            of application - it was scary and I loved it. I jumped head first
+            with HTTP up to this point, let alone hosting any kind of
+            application &mdash; it was scary and I loved it. I jumped head first
             into the sea of Python Discord bot tutorials, observing different
             design patterns and making notes. Then, on&nbsp;
-            <strong>July 17 2020</strong>, I created my very first Discord bot.
+            <strong>July 17 2020</strong>, I launched my very first Discord bot.
             Why such a specific date? It's not because of nostalgic or milestone
             reasons, although I wish it were. If that date looks familiar to
             you, you're probably a software developer or technical engineer. But
@@ -90,15 +88,15 @@ export default function () {
             made some amazing friends that motivated me, were upfront with me
             (constructive criticism ftw) and ultimately pushed me past my
             limits. Through making and growing Discord bots I explored I side of
-            programming that I hadn't really considered before - the World Wide
+            programming that I hadn't really considered before: the World Wide
             Web&trade;. In all seriousness, this was the starting point for my
             journey into HTTP, websockets and various different internet
             protocols, and is a major driving factor for the work that I do
             today.
           </p>
           <p>
-            At present&#8212;that is <strong>2023</strong> whenever you are
-            reading this&#8212;I still use Python every so often for prototyping
+            At present&mdash;that is <strong>2023</strong> whenever you are
+            reading this&mdash;I still use Python every so often for prototyping
             new ideas and concepts, and for when I'm working on&nbsp;
             <a
               className="underline hover:text-cyan-500 visited:text-purple-500"

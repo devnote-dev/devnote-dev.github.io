@@ -10,7 +10,7 @@ export default function () {
           <p>
             My name is Devaune Whittle, you may know me online as Devonte or
             "devnote" (parody name). I am a software developer from the UK
-            working on various open-source and commercial projects which you can
+            working on various open&ndash;source and commercial projects which you can
             find on my GitHub. In my spare time, I'm a hobbyist photographer and
             athletics enthusiast (although I'm not very good at it). I am also
             experimenting with videography for personal projects and potential
