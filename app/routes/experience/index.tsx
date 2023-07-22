@@ -41,14 +41,14 @@ export default function () {
             Crystal
           </h3>
         </div>
-        <div>
+        <Link className="text-slate-400 hover:text-black" to="/experience/dart">
           <div className="grid justify-items-end">
             <hr className="w-[45%] h-6 rounded-xl bg-[#00B4AB]" />
           </div>
-          <h3 className="ml-[56%] font-bold text-slate-400 text-xl uppercase">
-            Dart
+          <h3 className="ml-[56%] font-bold text-xl uppercase hover:transition hover:ease-in-out duration-300">
+            Dart - 2021
           </h3>
-        </div>
+        </Link>
         <div>
           <div className="grid justify-items-end">
             <hr className="w-[40%] h-6 rounded-xl bg-[#00ADD8]" />
