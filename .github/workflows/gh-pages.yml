@@ -2,9 +2,8 @@ name: Deploy
 
 on:
   push:
-    branches: ["main"]
-
-  workflow_dispatch:
+    branches:
+      - main
 
 permissions:
   contents: read
@@ -12,7 +11,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: true
 
 jobs:
@@ -21,29 +20,29 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+
       - name: Setup Pages
-        uses: actions/configure-pages@v2
+        uses: actions/configure-pages@v3
+
       - name: Setup Node
         uses: actions/setup-node@v3.6.0
+
       - name: Build Files
         run: |
           npm install
           npm run build
-      - name: Build Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./build
-          destination: ./_site
+
       - name: Upload Artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v2
 
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     runs-on: ubuntu-latest
     needs: build
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v2
