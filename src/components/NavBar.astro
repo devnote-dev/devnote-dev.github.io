@@ -1,0 +1,28 @@
+---
+import ActiveLink from './ActiveLink.astro';
+
+interface Props {
+  home?: boolean;
+  experience?: boolean;
+  photography?: boolean;
+}
+
+const { home, experience, photography } = Astro.props;
+---
+
+<nav
+  class="w-full h-14 flex flex-wrap items-center justify-center gap-x-6 bg-black dark:bg-slate-800 text-white shadow-md"
+>
+  <ActiveLink class="decoration-4 hover:underline underline-offset-[17px]" activeClass='underline' href="/">
+    Home
+  </ActiveLink>
+  <ActiveLink class="decoration-4 hover:underline underline-offset-[17px]" activeClass='underline' href="/experience">
+    Experience
+  </ActiveLink>
+  <ActiveLink class="decoration-4 hover:underline underline-offset-[17px]" activeClass='underline' href="/photography">
+    Photography
+  </ActiveLink>
+  <div class="decoration-4 hover:underline underline-offset-[17px]">
+    <a href="https://github.com/devnote-dev">GitHub</a>
+  </div>
+</nav>

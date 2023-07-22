@@ -1,0 +1,33 @@
+---
+import Footer from '../components/Footer.astro';
+import NavBar from '../components/NavBar.astro';
+import { ViewTransitions } from 'astro:transitions';
+
+interface Props {
+  home?: boolean;
+  experience?: boolean;
+  photography?: boolean;
+}
+
+const { props } = Astro;
+---
+
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>devnote-dev</title>
+    <ViewTransitions />
+  </head>
+  <body
+    class="grid min-h-[100svh] grid-rows-[auto_1fr_auto] font-[Roboto Medium,monospace]"
+  >
+    <NavBar {...props} />
+    <slot />
+    <Footer />
+  </body>
+</html>

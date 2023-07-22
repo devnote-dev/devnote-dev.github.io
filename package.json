@@ -1,40 +1,17 @@
 {
-  "private": true,
-  "sideEffects": false,
+  "name": "website",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "build": "run-p build:*",
-    "build:app": "remix build",
-    "build:css": "tailwindcss -o ./app/styles/tailwind.css",
-    "dev": "run-p dev:*",
-    "dev:app": "remix dev",
-    "dev:css": "npm run build:css -- --watch",
-    "start": "remix-serve build",
-    "format": "prettier --write ./app/**/*.tsx"
-  },
-  "prettier": {
-    "singleQuote": true,
-    "arrowParens": "avoid"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "@remix-run/node": "^1.7.5",
-    "@remix-run/react": "^1.7.5",
-    "@remix-run/serve": "^1.7.5",
-    "isbot": "^3.5.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@remix-run/dev": "^1.7.5",
-    "@remix-run/eslint-config": "^1.7.5",
-    "@types/react": "^18.0.15",
-    "@types/react-dom": "^18.0.6",
-    "eslint": "^8.23.1",
-    "npm-run-all": "^4.1.5",
-    "prettier": "^2.7.1",
-    "tailwindcss": "^3.2.4",
-    "typescript": "^4.7.4"
-  },
-  "engines": {
-    "node": ">=14"
+    "@astrojs/tailwind": "^4.0.0",
+    "astro": "^2.9.1",
+    "tailwindcss": "^3.3.3"
   }
 }
