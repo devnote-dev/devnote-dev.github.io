@@ -6,7 +6,7 @@ export default function () {
       <NavBar home />
       <div className="grid grid-cols-2 gap-x-10 m-12 font-[Roboto Medium,monospace]">
         <div>
-          <h1 className="mb-2 font-bold text-2xl uppercase">About Me</h1>
+          <h1 className="mb-2 font-bold text-4xl uppercase">About Me</h1>
           <p>
             My name is Devaune Whittle, you may know me online as Devonte or
             "devnote" (parody name). I am a software developer from the UK
@@ -19,12 +19,12 @@ export default function () {
           </p>
         </div>
         <div>
-          <h1 className="mb-2 font-bold text-2xl uppercase">Contacts</h1>
+          <h1 className="mb-2 font-bold text-4xl uppercase">Contacts</h1>
           <ol>
             <li className="flex flex-wrap">
               <p className="font-bold uppercase">Gmail •&nbsp;</p>
               <a
-                className="hover:underline"
+                className="underline hover:text-cyan-500 visited:text-purple-500"
                 href="mailto:devnote.dev75@gmail.com"
               >
                 devnote.dev75@gmail.com
@@ -33,7 +33,10 @@ export default function () {
             </li>
             <li className="flex flex-wrap">
               <p className="font-bold uppercase">Gmail •&nbsp;</p>
-              <a className="hover:underline" href="mailto:dkwhittle4@gmail.com">
+              <a
+                className="underline hover:text-cyan-500 visited:text-purple-500"
+                href="mailto:dkwhittle4@gmail.com"
+              >
                 dkwhittle4@gmail.com
               </a>
               &nbsp;(work)
@@ -41,7 +44,7 @@ export default function () {
             <li className="flex flex-wrap">
               <p className="font-bold uppercase">LinkedIn •&nbsp;</p>
               <a
-                className="hover:underline"
+                className="underline hover:text-cyan-500 visited:text-purple-500"
                 href="https://www.linkedin.com/in/devaune-w-10bb55233"
               >
                 Devaune W
