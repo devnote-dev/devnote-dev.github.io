@@ -3,10 +3,10 @@ import { Link } from '@remix-run/react';
 interface Props {
   home?: boolean;
   experience?: boolean;
-  photos?: boolean;
+  photography?: boolean;
 }
 
-export default function ({ home, experience, photos }: Props) {
+export default function ({ home, experience, photography }: Props) {
   return (
     <nav className="w-full h-14 flex flex-wrap items-center justify-center gap-x-6 bg-black dark:bg-slate-800 text-white shadow-md font-[Roboto Medium,monospace]">
       {home ? (
@@ -27,13 +27,13 @@ export default function ({ home, experience, photos }: Props) {
           <Link to="/experience">Experience</Link>
         </div>
       )}
-      {photos ? (
+      {photography ? (
         <div className="decoration-4 underline underline-offset-[17px]">
           Photography
         </div>
       ) : (
         <div className="decoration-4 hover:underline underline-offset-[17px]">
-          <Link to="/photos">Photography</Link>
+          <Link to="/photography">Photography</Link>
         </div>
       )}
       <div className="decoration-4 hover:underline underline-offset-[17px]">
