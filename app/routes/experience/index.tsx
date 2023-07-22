@@ -19,17 +19,17 @@ export default function () {
         </Link>
         <div>
           <div className="grid justify-items-end">
-            <hr className="w-[95%] h-6 rounded-xl bg-[#F1E05A]" />
+            <hr className="w-[75%] h-6 rounded-xl bg-[#F1E05A]" />
           </div>
-          <h3 className="ml-[6%] font-bold text-slate-400 text-xl uppercase">
+          <h3 className="ml-[26%] font-bold text-slate-400 text-xl uppercase">
             JavaScript
           </h3>
         </div>
         <div>
           <div className="grid justify-items-end">
-            <hr className="w-[90%] h-6 rounded-xl bg-[#3178C6]" />
+            <hr className="w-[70%] h-6 rounded-xl bg-[#3178C6]" />
           </div>
-          <h3 className="ml-[11%] font-bold text-slate-400 text-xl uppercase">
+          <h3 className="ml-[31%] font-bold text-slate-400 text-xl uppercase">
             TypeScript
           </h3>
         </div>
