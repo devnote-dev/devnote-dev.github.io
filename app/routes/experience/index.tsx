@@ -65,14 +65,14 @@ export default function () {
             Rust
           </h3>
         </div>
-        <div>
+        <Link className="text-slate-400 hover:text-black" to="/experience/zig">
           <div className="grid justify-items-end">
             <hr className="w-[12%] h-6 rounded-xl bg-[#EC915C]" />
           </div>
-          <h3 className="ml-[89%] font-bold text-slate-400 text-xl uppercase">
-            Zig
+          <h3 className="ml-[89%] font-bold text-xl uppercase hover:transition hover:ease-in-out duration-300">
+            Zig - 2023
           </h3>
-        </div>
+        </Link>
       </div>
       <Footer />
     </main>
