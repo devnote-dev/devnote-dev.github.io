@@ -4,86 +4,101 @@ import Layout from "../../layouts/Layout.astro";
 
 <Layout experience>
   <main>
-    <div class="grid grid-rows-2 gap-y-10 m-12 font-[Roboto Medium,monospace]">
-      <h1 class="mb-2 font-bold text-4xl uppercase">Experience</h1>
-      <a
-        class="text-slate-400 hover:text-black"
-        href="/experience/python"
-        transition:name="python"
-      >
-        <hr class="w-full h-6 rounded-xl bg-[#3572A5]" />
-        <h3
-          class="ml-4 font-bold text-xl uppercase hover:transition hover:ease-in-out duration-300"
+    <div class="m-12 font-[Roboto Medium,monospace]">
+      <h1 class="mb-4 font-bold text-4xl uppercase">Experience</h1>
+      <div class="grid grid-rows-2 gap-y-8">
+        <p>
+          This page covers the majority of my programming journey, with the most
+          notable experiences&mdash;those being the main programming languages I
+          have learnt and use&mdash;being separated into their own sections in
+          the timelines below. Other experiences can be found below the
+          timelines, maybe one day they will make it onto the timeline.
+        </p>
+        <a
+          class="text-slate-400 hover:text-black"
+          href="/experience/python"
+          transition:name="python"
         >
-          Python - 2016
-        </h3>
-      </a>
-      <div>
-        <div class="grid justify-items-end">
-          <hr class="w-[75%] h-6 rounded-xl bg-[#F1E05A]" />
+          <hr class="w-full h-6 rounded-xl bg-[#3572A5]" />
+          <h3
+            class="ml-4 font-bold text-xl uppercase hover:transition hover:ease-in-out duration-300"
+          >
+            Python - 2016
+          </h3>
+        </a>
+        <div>
+          <div class="grid justify-items-end">
+            <hr class="w-[75%] h-6 rounded-xl bg-[#F1E05A]" />
+          </div>
+          <h3 class="ml-[26%] font-bold text-slate-400 text-xl uppercase">
+            JavaScript
+          </h3>
         </div>
-        <h3 class="ml-[26%] font-bold text-slate-400 text-xl uppercase">
-          JavaScript
-        </h3>
-      </div>
-      <div>
-        <div class="grid justify-items-end">
-          <hr class="w-[70%] h-6 rounded-xl bg-[#3178C6]" />
+        <div>
+          <div class="grid justify-items-end">
+            <hr class="w-[70%] h-6 rounded-xl bg-[#3178C6]" />
+          </div>
+          <h3 class="ml-[31%] font-bold text-slate-400 text-xl uppercase">
+            TypeScript
+          </h3>
         </div>
-        <h3 class="ml-[31%] font-bold text-slate-400 text-xl uppercase">
-          TypeScript
-        </h3>
-      </div>
-      <div>
-        <div class="grid justify-items-end">
-          <hr class="w-[55%] h-6 rounded-xl bg-black" />
+        <div>
+          <div class="grid justify-items-end">
+            <hr class="w-[55%] h-6 rounded-xl bg-black" />
+          </div>
+          <h3 class="ml-[46%] font-bold text-slate-400 text-xl uppercase">
+            Crystal
+          </h3>
         </div>
-        <h3 class="ml-[46%] font-bold text-slate-400 text-xl uppercase">
-          Crystal
-        </h3>
-      </div>
-      <a
-        class="text-slate-400 hover:text-black"
-        href="/experience/dart"
-        transition:name="dart"
-      >
-        <div class="grid justify-items-end">
-          <hr class="w-[45%] h-6 rounded-xl bg-[#00B4AB]" />
-        </div>
-        <h3
-          class="ml-[56%] font-bold text-xl uppercase hover:transition hover:ease-in-out duration-300"
+        <a
+          class="text-slate-400 hover:text-black"
+          href="/experience/dart"
+          transition:name="dart"
         >
-          Dart - 2021
-        </h3>
-      </a>
-      <div>
-        <div class="grid justify-items-end">
-          <hr class="w-[40%] h-6 rounded-xl bg-[#00ADD8]" />
+          <div class="grid justify-items-end">
+            <hr class="w-[45%] h-6 rounded-xl bg-[#00B4AB]" />
+          </div>
+          <h3
+            class="ml-[46%] sm:ml-[56%] font-bold text-xl uppercase hover:transition hover:ease-in-out duration-300"
+          >
+            Dart - 2021
+          </h3>
+        </a>
+        <div>
+          <div class="grid justify-items-end">
+            <hr class="w-[40%] h-6 rounded-xl bg-[#00ADD8]" />
+          </div>
+          <h3
+            class="ml-[51%] sm:ml-[61%] font-bold text-slate-400 text-xl uppercase"
+          >
+            Go
+          </h3>
         </div>
-        <h3 class="ml-[61%] font-bold text-slate-400 text-xl uppercase">Go</h3>
-      </div>
-      <div>
-        <div class="grid justify-items-end">
-          <hr class="w-[25%] h-6 rounded-xl bg-[#DEA584]" />
+        <div>
+          <div class="grid justify-items-end">
+            <hr class="w-[25%] h-6 rounded-xl bg-[#DEA584]" />
+          </div>
+          <h3
+            class="ml-[66%] sm:ml-[76%] font-bold text-slate-400 text-xl uppercase"
+          >
+            Rust
+          </h3>
         </div>
-        <h3 class="ml-[76%] font-bold text-slate-400 text-xl uppercase">
-          Rust
-        </h3>
-      </div>
-      <a
-        class="text-slate-400 hover:text-black"
-        href="/experience/zig"
-        transition:name="zig"
-      >
-        <div class="grid justify-items-end">
-          <hr class="w-[12%] h-6 rounded-xl bg-[#EC915C]" />
-        </div>
-        <h3
-          class="ml-[89%] font-bold text-xl uppercase hover:transition hover:ease-in-out duration-300"
+        <a
+          class="text-slate-400 hover:text-black"
+          href="/experience/zig"
+          transition:name="zig"
         >
-          Zig - 2023
-        </h3>
-      </a>
+          <div class="grid justify-items-end">
+            <hr class="w-[12%] h-6 rounded-xl bg-[#EC915C]" />
+          </div>
+          <h3
+            class="ml-[49%] sm:ml-[89%] font-bold text-xl uppercase hover:transition hover:ease-in-out duration-300"
+          >
+            Zig - 2023
+          </h3>
+        </a>
+      </div>
     </div>
   </main>
 </Layout>
