@@ -6,14 +6,15 @@ import Layout from "../../layouts/Layout.astro";
   <main>
     <div class="m-12 font-[Roboto Medium,monospace]">
       <h1 class="mb-4 font-bold text-4xl uppercase">Experience</h1>
+      <p class="mb-8">
+        This page covers the majority of my programming journey, with the most
+        notable experiences&mdash;those being the main programming languages I
+        have learnt and use&mdash;being separated into their own sections in the
+        timelines below. Other experiences such as languages, frameworks and dev
+        tools can be found below the languages timeline.
+      </p>
+      <h2 class="mb-4 font-bold text-3xl uppercase">Main Languages</h2>
       <div class="grid grid-rows-2 gap-y-8">
-        <p>
-          This page covers the majority of my programming journey, with the most
-          notable experiences&mdash;those being the main programming languages I
-          have learnt and use&mdash;being separated into their own sections in
-          the timelines below. Other experiences can be found below the
-          timelines, maybe one day they will make it onto the timeline.
-        </p>
         <a
           class="text-slate-400 hover:text-black"
           href="/experience/python"
@@ -99,6 +100,54 @@ import Layout from "../../layouts/Layout.astro";
           </h3>
         </a>
       </div>
+      <h2 class="mb-4 font-bold text-3xl uppercase">Other Languages</h2>
+      <div class="grid gap-y-4">
+        <p>
+          As part of one of the largest projects I contribute to, I have learned
+          parts of <strong class="text-[#4F5D95]">PHP</strong> with the Laravel Framework,
+          but I wouldn't consider it enough to be proficient in and I don't have
+          much use for the language at present.
+        </p>
+        <p>
+          <strong class="text-[#A97BFF]">Kotlin</strong> caught my eye and is a serious
+          contender against Dart for <a href="/experience/dart"
+            >various reasons</a
+          >, it has a really nice design, great typing and concurrency system,
+          and runs on the JVM (if that still counts as a benefit). If I ever get
+          back into application development, I'll probably be using Kotlin.
+        </p>
+        <p>
+          <strong class="text-[#C22D40]">Scala</strong> is an interesting language
+          with a very rich yet complex type system. Unfortunately, I couldn't find
+          anything practical to do with this language but I hope that one day I will
+          get that opportunity.
+        </p>
+        <p>
+          My <strong>HTML</strong> and <strong>CSS</strong> experience has been painful
+          to say the least. To this day I consider myself a backend developer, my
+          skills with frontend development are minimal as shown by this website (it
+          took me half a year to create this). That being said, I am slowly improving
+          but if you ever need help with fontend development, do us both a favour
+          and ask a professional.
+        </p>
+      </div>
+      <!-- TODO: Frameworks -->
+      <h2 class="my-4 font-bold text-3xl uppercase">Editors</h2>
+      <!-- TODO: and Tools -->
+      <p>
+        <strong>VSCode</strong> has been my primary editor since I started programming
+        seriously. It's had its ups and downs but works for most projects and is
+        generally reliable. I have tried other editors like <strong
+          >Notepad++</strong
+        > and <strong>IntelliJ</strong>
+        (for Kotlin and Scala) but they don't work as well for me in terms of productivity.
+        In more recent times I have been familiarising myself with <strong
+          >Neovim</strong
+        > which has proved to be quite useful when working on projects in remote
+        environments. I haven't quite grasped (Neo)Vim motions yet but I think that
+        it could be a potential permanent contender against VSCode for remote work.
+      </p>
     </div>
+    <!-- TODO: Dev Environment -->
   </main>
 </Layout>
